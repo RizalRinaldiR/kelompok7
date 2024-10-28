@@ -12,16 +12,20 @@
             <h2 class="text-2xl font-bold mb-6 text-center ">Daftar Akun</h2>
             <form>
                 <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
-                    <input type="text" id="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                    <label for="name" class="block text-sm font-medium text-gray-700 shadow-sm ">Nama Lengkap</label>
+                    <input type="text" id="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" placeholder="Nama Lengkap" required>
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block text-sm font-medium text-gray-700">No Handphone</label>
-                    <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                    <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="085778778XXX" required>
                 </div>
                 <div class="mb-4">
                     <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                    <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                    <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="******" required>
+                </div>
+                <div class="mb-6">
+                    <label for="confirm_password" class="block text-sm font-medium text-gray-700">Konfirmasi Password</label>
+                    <input type="password" id="confirm_password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="******" required>
                 </div>
                 <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded w-full opacity-100">Daftar</button>
             </form>
