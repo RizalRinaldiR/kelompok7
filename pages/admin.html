@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - Segar Squad</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-[#b6ecec] p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="../image/logo.png" alt="SegarSquad Logo" class="h-12">
+            <div class="space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-yellow-300 transition">Home</a>
+                <a href="login.html" class="text-gray-600 hover:text-yellow-300 transition">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- bagian konten utama -->
+    <main class="container mx-auto mt-10 flex">
+        <aside class="w-64 bg-green-800 text-white flex flex-col rounded-lg shadow-md">
+            <div class="flex items-center justify-center h-16 bg-green-900 text-2xl font-semibold">
+                Admin
+            </div>
+            <nav class="flex-grow mt-4">
+                <ul class="space-y-2">
+                    <li class="px-4 py-2 hover:bg-green-700 transition cursor-pointer">
+                        <a href="admin.html" class="flex items-center">
+                            <span class="ml-3">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-green-700 transition cursor-pointer">
+                        <a href="kelola_barang.html" class="flex items-center">
+                            <span class="ml-3">Kelola Barang</span>
+                        </a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-green-700 transition cursor-pointer">
+                        <a href="kelola_pesanan.html" class="flex items-center">
+                            <span class="ml-3">Kelola Pesanan</span>
+                        </a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-green-700 transition cursor-pointer">
+                        <a href="kelola_kategori.html" class="flex items-center">
+                            <span class="ml-3">Kelola Kategori</span>
+                        </a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-green-700 transition cursor-pointer">
+                        <a href="laporan_penjualan.html" class="flex items-center">
+                            <span class="ml-3">Laporan Penjualan</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- bagian 3 tabel -->
+        <div class="flex-1 p-6 bg-white rounded-lg shadow-md ml-4">
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-green-100 p-4 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold">Total Penjualan</h3>
+                    <p class="text-2xl">Rp. 1.000</p>
+                </div>
+                <div class="bg-green-100 p-4 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold">Jumlah Produk</h3>
+                    <p class="text-2xl">10</p>
+                </div>
+                <div class="bg-green-100 p-4 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold">Jumlah Pesanan</h3>
+                    <p class="text-2xl">15</p>
+                </div>
+            </section>
+
+            <!-- bagian pesanan -->
+            <section class="mt-6">
+                <h2 class="text-xl font-semibold mb-4">Pesanan Terbaru</h2>
+                <table class="min-w-full bg-white rounded-lg shadow-md">
+                    <thead>
+                        <tr class="bg-green-700 text-white">
+                            <th class="px-6 py-3 text-center">No</th>
+                            <th class="px-6 py-3 text-center">Nama Pelanggan</th>
+                            <th class="px-6 py-3 text-center">Tanggal</th>
+                            <th class="px-6 py-3 text-center">Status</th>
+                            <th class="px-6 py-3 text-center">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-green-100">
+                            <td class="px-6 py-4 text-center">1</td>
+                            <td class="px-6 py-4 text-center">Rizal Rinaldi R</td>
+                            <td class="px-6 py-4 text-center">2024-10-28</td>
+                            <td class="px-6 py-4 text-center">Diproses</td>
+                            <td class="px-6 py-4 text-center">Rp. 100.000</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-green-100">
+                            <td class="px-6 py-4 text-center">2</td>
+                            <td class="px-6 py-4 text-center">Silvi Intan</td>
+                            <td class="px-6 py-4 text-center">2024-10-28</td>
+                            <td class="px-6 py-4 text-center">Selesai</td>
+                            <td class="px-6 py-4 text-center">Rp. 110.000</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-green-100">
+                            <td class="px-6 py-4 text-center">3</td>
+                            <td class="px-6 py-4 text-center">Fiqri Yusup</td>
+                            <td class="px-6 py-4 text-center">2024-10-28</td>
+                            <td class="px-6 py-4 text-center">Selesai</td>
+                            <td class="px-6 py-4 text-center">Rp. 120.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <!-- bagian footer -->
+    <footer class="bg-[#b6ecec] text-gray-600 py-4 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 - Segar Squad - Toko Sayur, Buah, dan Daging.</p>
+            <p>Kontak: SegarSquad@contoh.com</p>
+            <div class="mt-2">
+                <a href="#" class="hover:text-yellow-300 transition">Facebook</a>
+                <a href="#" class="hover:text-yellow-300 transition ml-4">Twitter</a>
+                <a href="#" class="hover:text-yellow-300 transition ml-4">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
