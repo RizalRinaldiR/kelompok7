@@ -8,9 +8,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-green-100">
+    <nav class="bg-[#b6ecec] p-4 shadow-lg"> 
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"><img src="../image/logo.png" alt="SegarSquad Logo" class="h-12"> </a>
+            <div class="space-x-4">
+                <a href="login.html" class="text-gray-600 hover:text-yellow-300 transition">Login</a>
+                <a href="register.html" class="text-gray-600 hover:text-yellow-300 transition">Register</a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+    <div class="min-h-screen flex items-center justify-center bg-[url('../image/1_sayuran.jpg')] p-8 bg-cover">
+        <div class="p-8 rounded-lg shadow-lg w-96 bg-green-100 opacity-90">
             <h2 class="text-2xl font-bold text-center text-green-700 mb-6">Lupa Password</h2>
             <form action="#">
                 <div class="mb-4">
@@ -28,6 +37,18 @@
             </form>
         </div>
     </div>
+
+    <footer class="bg-[#b6ecec] text-gray-600 py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 - Segar Squad - Toko Sayur,Buah,dan Daging.</p>
+            <p>Kontak: SegarSquad@contoh.com</p>
+            <div class="mt-2">
+                <a href="#" class="hover:text-yellow-300 transition">Facebook</a>
+                <a href="#" class="hover:text-yellow-300 transition">Twitter</a>
+                <a href="#" class="hover:text-yellow-300 transition">Instagram</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
